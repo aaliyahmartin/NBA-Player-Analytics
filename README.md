@@ -34,8 +34,10 @@ This project explores how statistics such as minutes played, field goal attempts
 ## Project Structure
 NBA-Player-Analytics/
 ├── data/
+
 │ └── player_stats.csv
 ├── graphs/
+
 │ ├── points_distribution.png
 │ ├── minutes_vs_points.png
 │ ├── top_scorers.png
