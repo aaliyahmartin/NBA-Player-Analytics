@@ -2,6 +2,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/player_stats.csv")
+df = pd.read_csv("data/player_stats.csv")
+
+df["PLAYER_VALUE"] = (
+    0.35 * df["PTS"] +
+    0.20 * df["REB"] +
+    0.20 * df["AST"] +
+    0.15 * df["STL"] +
+    0.10 * df["BLK"]
+)
 
 #Point Distrubtion Histogram 
 plt.figure(figsize= (8,5))
@@ -66,3 +75,18 @@ plt.ylabel("Blocks")
 
 plt.savefig("graphs/rebounds_vs_blocks.png")
 plt.show()
+
+#Top 10 Value Players 
+
+top_players = df.sort_values("PLAYER_VALUE", ascending = False).head(10)
+labels = top_players["PLAYER_NAME"] + " (" + top_players["SEASON_ID"] + ")"
+plt.figure(figsize =(10,6))
+plt.barh(labels, top_players["PLAYER_VALUE"], color = "hotpink" )
+plt.subplots_adjust(left=0.35)
+plt.title("Top 10 Player Value Rankings")
+plt.xlabel("Player Values")
+plt.ylabel("Player")
+
+plt.gca().invert_yaxis()
+
+plt.savefig("graphs/top_player_values.png")
