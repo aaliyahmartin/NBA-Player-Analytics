@@ -33,6 +33,7 @@ This project explores how statistics such as minutes played, field goal attempts
 
 ## Project Structure
 NBA-Player-Analytics/
+
 ├── data/
 
 │ └── player_stats.csv
