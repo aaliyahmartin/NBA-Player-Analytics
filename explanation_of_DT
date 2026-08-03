@@ -1,5 +1,0 @@
-# each player stored as a dictionary
-    - each hold keys and values (id:####, name:@@@@)
-#nba_players is a list of dictionaries as elements 
-    #"id","full_name", "first_name", "last_name", "is_active"
-#Pandas works best with a DataFrame, which is like an excel spreedsheet 
