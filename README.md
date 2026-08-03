@@ -115,6 +115,6 @@ Future development of this project includes:
 
 ## Author
 
-Aaliyah Lee  
+Aaliyah Martin  
 Mathematics Undergraduate | Mathematical Analysis & Operations Research  
 Interested in Data Analytics, Sports Analytics, and Operations Research
