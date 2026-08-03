@@ -31,29 +31,6 @@ This project explores how statistics such as minutes played, field goal attempts
 
 ---
 
-## Project Structure
-NBA-Player-Analytics/
-
-├── data/
-
-│ └── player_stats.csv
-├── graphs/
-
-│ ├── points_distribution.png
-│ ├── minutes_vs_points.png
-│ ├── top_scorers.png
-│ ├── rebounds_vs_blocks.png
-│ └── correlation_heatmap.png
-├── script/
-│ ├── get_players.py
-│ ├── player_stats.py
-│ ├── eda.py
-│ ├── visualizations.py
-│ └── correlation.py
-└── README.md
-
----
-
 ## Data Collection
 
 Player information was collected using the NBA API.
